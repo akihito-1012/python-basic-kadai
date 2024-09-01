@@ -1,0 +1,29 @@
+akihitofujita@fujitanoMacBook-Air ~ % mkdir git_challenge
+akihitofujita@fujitanoMacBook-Air ~ % cd git_challenge
+akihitofujita@fujitanoMacBook-Air git_challenge % git init
+Initialized empty Git repository in /Users/akihitofujita/git_challenge/.git/
+akihitofujita@fujitanoMacBook-Air git_challenge % touch hello_world.txt
+akihitofujita@fujitanoMacBook-Air git_challenge % echo Hello, world! >> hello_world.txt
+akihitofujita@fujitanoMacBook-Air git_challenge % git add hello_world.txt
+akihitofujita@fujitanoMacBook-Air git_challenge % git commit -m "hello_world.txtを追加"
+[main (root-commit) 4dac01c] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+akihitofujita@fujitanoMacBook-Air git_challenge % echo こんにちは、世界！ >> hello_world.txt
+akihitofujita@fujitanoMacBook-Air git_challenge % git add hello_world.txt
+akihitofujita@fujitanoMacBook-Air git_challenge % git commit -m "日本語訳を追記"
+[main 573cf77] 日本語訳を追記
+ 1 file changed, 1 insertion(+)
+akihitofujita@fujitanoMacBook-Air git_challenge % git log
+commit 573cf77debb100405527329392c9f22b8d8173a3 (HEAD -> main)
+Author: akihito-1012 <data.scientist1012@gmail.com>
+Date:   Sun Sep 1 17:53:48 2024 +0900
+
+    日本語訳を追記
+
+commit 4dac01cc2aba1da7e3da026166ddcd885de192fe
+Author: akihito-1012 <data.scientist1012@gmail.com>
+Date:   Sun Sep 1 17:51:02 2024 +0900
+
+    hello_world.txtを追加
+akihitofujita@fujitanoMacBook-Air git_challenge %
